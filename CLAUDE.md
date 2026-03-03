@@ -1,0 +1,3 @@
+This is the starting point of this repository.
+
+I want to make an app that queries the Rhode Island DMV appointment maker to see when appointments are available. This is still in exploratory stages. I have two possible use-cases so far. The first is that I run a cron job that queries the available appointments every minute or so, so I can look at the data after a week or two and observe patterns (e.g. when are new appointments added?). The second is a notifier for public use (or at least private use), so that the data is queried every minute and if a slot becomes available, the user receives a text so they can make an appointment.
