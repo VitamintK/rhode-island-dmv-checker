@@ -14,5 +14,6 @@ def parse_slot(slot):
 
 slots = [parse_slot(s) for s in data["reservationSlots"]]
 
-for slot in slots:
-    print(slot)
+cranston_available = [s for s in slots if s["location"] == "Cranston" and s["availableSlotCount"] > 0]
+earliest = min(cranston_available, key=lambda s: s["date_time"])
+print(earliest)
